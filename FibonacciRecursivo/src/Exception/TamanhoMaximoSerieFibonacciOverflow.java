@@ -1,6 +1,6 @@
 package Exception;
 
-public class TamanhoMaximoSerieFibonacciOverflow extends RuntimeException {
+public class TamanhoMaximoSerieFibonacciOverflow extends Exception {
 
 	/**
 	 * 
