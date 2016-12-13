@@ -1,8 +1,12 @@
+import Exception.TamanhoMaximoSerieFibonacciOverflow;
 
 public class Fibonacci {
 	private int[] seriesJaCalculadas;
 	
-	public Fibonacci(int tamanhoMaximoSerie){
+	public Fibonacci(int tamanhoMaximoSerie) {
+		if (tamanhoMaximoSerie > 100)
+			throw new TamanhoMaximoSerieFibonacciOverflow("Tamanho máximo da série é 100");
+		
 		seriesJaCalculadas = new int[tamanhoMaximoSerie];
 	}
 
